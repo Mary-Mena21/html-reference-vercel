@@ -5,51 +5,54 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+
+
   </head>
   <body>
     <!-- <div id="app"></div>
     <script type="module" src="/main.js"></script> -->
 
-    <h1>HTML Reference Page-vercel-Html</h1>
-    <main>
-      <article>
-        <h2>Main</h2>
-        <p>Contains the main content of the web page</p>
-        <pre>
-          &lt;main&gt;
-          This is the main content
-          &lt;This is a tag in the main tag &gt;
-          &lt;main&gt;
-        </code>
-      </pre>
-        <code>
-      </article>
+    <h1>Javascript Reference Page-vercel</h1>
 
-      <article>
-        <h2>Main</h2>
-        <p>Contains the main content of the web page</p>
-        <pre>
-          &lt;main&gt;
-          This is the main content
-          &lt;This is a tag in the main tag &gt;
-          &lt;main&gt;
-        </code>
-      </pre>
-        <code>
-      </article>
 
-      <article>
-        <h2>p</h2>
-        <p>create paragraph</p>
-        <pre>
-          &lt;main&gt;
-          This is the main content
-          &lt;This is a tag in the main tag &gt;
-          &lt;main&gt;
-        </code>
-      </pre>
-        <code>
-      </article>
+      <h2>What Can JavaScript Do?</h2>
+
+      <p>JavaScript can change HTML attribute values.</p>
+      
+      <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+      
+      <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif',document.getElementById('myImage').style.width='5%'">Turn on the light</button>
+      
+      <img id="myImage" class="myImage2" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+      
+      <button onclick="document.getElementsByClassName('myImage2').src='https://www.w3schools.com/js/pic_bulboff.gif', document.getElementById('myImage').style.width='7%'">Turn off the light</button> 
+      <!-- //--------------------------------------------------------------- -->
+      <p>JavaScript can show hidden HTML elements.</p>
+
+      <p id="demo" style="display:none">Hello JavaScript!</p>
+      
+      <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+      <!-- =================================================== -->
+
+      <p id="demo3">Hello</p>
+      <p id="demo4">Hello</p>
+      <script>
+        document.getElementById("demo3").innerHTML = "My First JavaScript3";
+        document.getElementById("demo4").innerHTML = "My First JavaScript4";
+      </script>
+      <script> 
+        let myFunction=()=>{document.getElementById('demo2').innerHTML = 'changed.'}
+        </script>
+
+<p id="demo2">paragraph</p>
+<button type="button" onclick="myFunction()">click me</button>
+<!-- =================================================== -->
+
+
+
+
+
+
 
     </main>
   </body>
