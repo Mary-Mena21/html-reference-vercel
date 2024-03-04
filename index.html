@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
 
 
   </head>
   <body>
-    <!-- <div id="app"></div>
-    <script type="module" src="/main.js"></script> -->
-
+    
     <h1>Javascript Reference Page-vercel</h1>
+    <div id="app">zzzzzzzzzz</div>
 
 
       <h2>What Can JavaScript Do?</h2>
@@ -25,7 +25,11 @@
       
       <img id="myImage" class="myImage2" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
       
-      <button onclick="document.getElementsByClassName('myImage2').src='https://www.w3schools.com/js/pic_bulboff.gif', document.getElementById('myImage').style.width='7%'">Turn off the light</button> 
+      <button onclick=
+      "{document.getElementsByClassName('myImage2').src='https://www.w3schools.com/js/pic_bulboff.gif',
+       document.getElementById('myImage').style.width='7%';}">
+       Turn off the light
+      </button> 
       <!-- //--------------------------------------------------------------- -->
       <p>JavaScript can show hidden HTML elements.</p>
 
@@ -47,13 +51,28 @@
 <p id="demo2">paragraph</p>
 <button type="button" onclick="myFunction()">click me</button>
 <!-- =================================================== -->
+<h5>JavaScript Output</h5>
+<p id="demo0"></p>
+
+<script>
+document.getElementById("demo0").innerHTML = 5 + 6;
+</script>
 
 
+<script>
+document.write(5 + 6);
+</script>
+<!-- Using document.write() after an HTML document is loaded, will delete all existing HTML: -->
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
 
+<button type="button" onclick="window.alert(5 + 6);">Try Alert</button>
+<button type="button" onclick="alert(5 * 6);">Try Alert 30</button>
 
-
-
-
+<script>
+  console.log(5 * 60);
+  </script>
+<!-- ======================================================= -->
+<button onclick="window.print()">Print this page</button>
     </main>
   </body>
 </html>
